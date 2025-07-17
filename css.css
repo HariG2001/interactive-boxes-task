@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    height: 80px;
+    overflow: hidden;
+}
+
+.box h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.options {
+    display: none;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.color-section, .size-section {
+    margin-bottom: 15px;
+}
+
+.color-section h3, .size-section h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.colors {
+    display: flex;
+    gap: 10px;
+}
+
+.color {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.color:hover {
+    border-color: #333;
+}
+
+.red {
+    background-color: #ff6b6b;
+}
+
+.blue {
+    background-color: #4d96ff;
+}
+
+.green {
+    background-color: #6bff6b;
+}
+
+.size-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Active state */
+.box.active {
+    height: auto;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.box.active .options {
+    display: block;
+}
